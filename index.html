@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    
+
+    <header>
+      
+      <i class="fas fa-book-open text-primary" id="book-icon"></i>
+      <h1 class="form-title">DeepDive <span style="color:#008cba">Book</span>List</h1>
+    </header>
+
+    <form class="add-form">
+        <div>
+          <label>Title</label><br>
+          <input class="form-input" id="title" type="text" name="title" /><br>
+          
+          <label>Author</label><br>
+          <input class="form-input" id="author" type="text" name="author"/><br>
+          <label>ISBN#</label><br>
+          <input class="form-input" id="isbn" type="text" name="isbn"/><br>
+        </div>
+        <input type = "button" value = "Add Book" id="add-button"/>     
+    </form>
+
+    <table class="book-list">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN#</th>
+      </tr>
+      </thead>
+      <tbody id="tbd">
+      </tbody>
+    </table>
+
+<script src="script.js"></script>
+  </body>
+</html>
